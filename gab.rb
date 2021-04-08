@@ -5,25 +5,25 @@
 class Gab < Formula
   desc "Github Action Badge Generator"
   homepage "https://github.com/abtris/ga-badge"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/abtris/ga-badge/releases/download/v0.1.0/gab_0.1.0_Darwin_x86_64.tar.gz"
-    sha256 "d1e24c95efb923071f7d574f483e20becaa337a7ddecf7f76e01aa02aa2d8ac8"
+    url "https://github.com/abtris/ga-badge/releases/download/v0.2.0/gab_0.2.0_Darwin_x86_64.tar.gz"
+    sha256 "ebd4323f6edd840424087deeb96bb274596bbe6a4bc7d2fdfef7322936d69e7f"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/abtris/ga-badge/releases/download/v0.1.0/gab_0.1.0_Darwin_arm64.tar.gz"
-    sha256 "7c9c64e0249d0cd466133b3f22d9a92f08630d7cf252bc4dce15897f35a0aa3d"
+    url "https://github.com/abtris/ga-badge/releases/download/v0.2.0/gab_0.2.0_Darwin_arm64.tar.gz"
+    sha256 "dbb9936aa2c860a753babb79aa5ad0d205e7843f3d13b77350dbd229794a5555"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/abtris/ga-badge/releases/download/v0.1.0/gab_0.1.0_Linux_x86_64.tar.gz"
-    sha256 "207d7d007a00d9dc831eb2e269e4cd7578d76e73f75e15a20a4547e248eeccd1"
+    url "https://github.com/abtris/ga-badge/releases/download/v0.2.0/gab_0.2.0_Linux_x86_64.tar.gz"
+    sha256 "cf9db37dffafb1eda94c98db449d0305ed24772312a726cea2c7c51803d7471d"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/abtris/ga-badge/releases/download/v0.1.0/gab_0.1.0_Linux_arm64.tar.gz"
-    sha256 "bf6e901f3530144f9392be16a9357e2697799d1d703e416b5419fea0d4355c39"
+    url "https://github.com/abtris/ga-badge/releases/download/v0.2.0/gab_0.2.0_Linux_arm64.tar.gz"
+    sha256 "6137828b907911ba042f643e60c85233ea2893e3a5b4183cb4db4aef59519729"
   end
 
   def install
