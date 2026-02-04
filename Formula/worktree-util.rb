@@ -5,21 +5,21 @@
 class WorktreeUtil < Formula
   desc "A simple TUI for managing Git worktrees"
   homepage "https://github.com/abtris/worktree-util"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/abtris/worktree-util/releases/download/v0.5.1/worktree-util_0.5.1_Darwin_x86_64.tar.gz"
-      sha256 "798dadd053d573bbe883b87a5080e6e425f5d990805a57a8ad8f98e0b102bcf2"
+      url "https://github.com/abtris/worktree-util/releases/download/v0.5.2/worktree-util_0.5.2_Darwin_x86_64.tar.gz"
+      sha256 "428697bc02ac4845e11407cce4794e264e832dc886b9a31aa504effb78aeabfd"
 
       def install
         bin.install "worktree-util"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/abtris/worktree-util/releases/download/v0.5.1/worktree-util_0.5.1_Darwin_arm64.tar.gz"
-      sha256 "d13f2036a76f1315dca9e91b4b0bd3542f7e7d0e47ca76e314e84089e10da7ac"
+      url "https://github.com/abtris/worktree-util/releases/download/v0.5.2/worktree-util_0.5.2_Darwin_arm64.tar.gz"
+      sha256 "82ada9a9b6ee7a9709dc6fba4dbeeca81d8e152fc64e5cd88a81747e639caef6"
 
       def install
         bin.install "worktree-util"
@@ -29,15 +29,15 @@ class WorktreeUtil < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abtris/worktree-util/releases/download/v0.5.1/worktree-util_0.5.1_Linux_x86_64.tar.gz"
-      sha256 "7d887c0acf2212a6a5c9da93e279ee60bddf696f807ca6b06acd97bc88e09f86"
+      url "https://github.com/abtris/worktree-util/releases/download/v0.5.2/worktree-util_0.5.2_Linux_x86_64.tar.gz"
+      sha256 "f78d61a059c846e7fc4bb703d8a8fbc0728e773b90117d75a295a72cca0b0ebe"
       def install
         bin.install "worktree-util"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/abtris/worktree-util/releases/download/v0.5.1/worktree-util_0.5.1_Linux_arm64.tar.gz"
-      sha256 "5523007d501d2d15ccd7d5ba99ce86c33cdd234ef35e9992a63f9ef5c4e7f1d8"
+      url "https://github.com/abtris/worktree-util/releases/download/v0.5.2/worktree-util_0.5.2_Linux_arm64.tar.gz"
+      sha256 "463aa93ee6193e5b807af00fdd0fe2b54d368cff234dfc6514474e0a6d404fa7"
       def install
         bin.install "worktree-util"
       end
