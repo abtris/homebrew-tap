@@ -12,18 +12,10 @@ class Gab < Formula
     if Hardware::CPU.intel?
       url "https://github.com/abtris/ga-badge/releases/download/v0.3.4/gab_0.3.4_Darwin_x86_64.tar.gz"
       sha256 "76e650f6acdc2c76137cd48e2d4447487a6d3a00859293720e695fcfd040c2e8"
-
-      def install
-        bin.install "gab"
-      end
     end
     if Hardware::CPU.arm?
       url "https://github.com/abtris/ga-badge/releases/download/v0.3.4/gab_0.3.4_Darwin_arm64.tar.gz"
       sha256 "abf3e4c9ad13ffac27ed96c19053b48ba449184c0f85891b50104f67a00dc782"
-
-      def install
-        bin.install "gab"
-      end
     end
   end
 
@@ -31,18 +23,14 @@ class Gab < Formula
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/abtris/ga-badge/releases/download/v0.3.4/gab_0.3.4_Linux_arm64.tar.gz"
       sha256 "35205f9e41c4ae64a0f787cc8c862579f05b533e9ef67fea5a2290055eb1bbba"
-
-      def install
-        bin.install "gab"
-      end
     end
     if Hardware::CPU.intel?
       url "https://github.com/abtris/ga-badge/releases/download/v0.3.4/gab_0.3.4_Linux_x86_64.tar.gz"
       sha256 "973318aaab4bd2c981d68828e563937247c4af61e20667c84a4b60fa5634b703"
-
-      def install
-        bin.install "gab"
-      end
     end
+  end
+
+  def install
+    bin.install "gab"
   end
 end
